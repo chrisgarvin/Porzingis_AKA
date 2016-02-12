@@ -17,6 +17,8 @@ Requires [node](http://nodejs.org/) and [npm](http://npmjs.org/)
 
 > npm install request
 
+> npm install http
+
 > npm install twit
 
 > npm install express
