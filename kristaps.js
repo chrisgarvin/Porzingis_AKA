@@ -79,14 +79,19 @@ function randomWord(array) {
 }
 
 // runs akaKristaps initially and then sets an interval of tweeting every 30 minutes
-// also pings the app to keep from falling asleep due to inactivity
+// also pings the app to keep from falling asleep due to inactivity.
+// only tweets from 6am-11pm PST
 
 akaKristaps();
 
 setInterval(function() {
   try {
-    akaKristaps();
+    var hour = new Date().getUTCHours();
     http.get("http://porzingis.herokuapp.com");
+    if((hour  >= 7) && (hour <= 14)){
+    } else {
+    akaKristaps();
+  }
   }
  catch (e) {
     console.log(e);
