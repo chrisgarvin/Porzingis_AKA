@@ -4,6 +4,7 @@ var express = require('express');
 var app = express();
 var random_lists = require('./random_lists');
 var randomEmoji = require('random-emoji');
+var http = require("http");
 
 app.get('/', function(req, res){
     res.send('KRISTAPS... PORZINGIS');
@@ -78,12 +79,14 @@ function randomWord(array) {
 }
 
 // runs akaKristaps initially and then sets an interval of tweeting every 30 minutes
+// also pings the app to keep from falling asleep due to inactivity
 
 akaKristaps();
 
 setInterval(function() {
   try {
     akaKristaps();
+    http.get("http://porzingis.herokuapp.com");
   }
  catch (e) {
     console.log(e);
