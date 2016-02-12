@@ -15,15 +15,9 @@ The format is such that each tweet begins with "Kristaps Porzingis, AKA the " an
 
 Requires [node](http://nodejs.org/) and [npm](http://npmjs.org/)
 
-> npm install request
+> git clone https://github.com/chrisgarvin/Porzingis_AKA.git
 
-> npm install http
-
-> npm install twit
-
-> npm install express
-
-> npm install random_emoji
+> npm install
 
 > node kristaps.js
 
