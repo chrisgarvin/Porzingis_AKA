@@ -6,10 +6,9 @@ var random_lists = require('./random_lists');
 var randomEmoji = require('random-emoji');
 
 app.get('/', function(req, res){
-    res.send('Hello world.');
-    akaKristaps();
+    res.send('KRISTAPS... PORZINGIS');
 });
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
 
 // Create twitter client
 
