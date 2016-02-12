@@ -1,6 +1,6 @@
 {
   "name": "aka_kristaps",
-  "version": "0.1",
+  "version": "1.0.0",
   "description": "A random tweet generator about Kristaps Porzingis",
   "main": "kistaps.js",
   "scripts": {
