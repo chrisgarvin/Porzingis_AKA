@@ -4,7 +4,6 @@ var express = require('express');
 var app = express();
 var random_lists = require('./random_lists');
 var randomEmoji = require('random-emoji');
-var env = require('./env');
 
 app.get('/', function(req, res){
     res.send('Hello world.');
